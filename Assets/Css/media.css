@@ -1,0 +1,43 @@
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+  .Home {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+  }
+
+  .text-container {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .img-container {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .Icons {
+    justify-content: center;
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+    .projects {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}
