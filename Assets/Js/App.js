@@ -101,9 +101,12 @@ navLinks.forEach(link => {
 
 let navLinks2 = document.querySelectorAll(".nav-link");
 
-// Page load par HOME active rahe
+// Page load par
+let currentHash = window.location.hash || "#home";
+
+// Jo hash match kare usko active karo
 navLinks2.forEach(link => {
-  if (link.getAttribute("href") === "#home") {
+  if (link.getAttribute("href") === currentHash) {
     link.classList.add("active");
   }
 });
@@ -111,11 +114,8 @@ navLinks2.forEach(link => {
 // Click handling
 navLinks2.forEach(link => {
   link.addEventListener("click", () => {
-
-    // Pehle sabse active hatao
     navLinks2.forEach(item => item.classList.remove("active"));
-
-    // Phir current pe active lagao
     link.classList.add("active");
   });
 });
+
